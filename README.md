@@ -1,3 +1,5 @@
+# Tutorial
+https://zelikk.blogspot.com/2022/07/url-shorten-worker-hide-tutorial.html
 # 演示
 短链系统 https://1way.eu.org/bodongshouqulveweifengci
 
