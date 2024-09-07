@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Url-Shorten-Worker</title>
+</head>
+
+<body>
+  <div id="html-preview"></div>
+
+<textarea id="longURL">
+{__FINAL_LINK__}
+</textarea>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <script>
+    // Convert MarkDown text to display
+    function syncMarkDownView() {
+      const markdownContent = document.getElementById('longURL').value;
+      const htmlPreview = document.getElementById('html-preview');
+      htmlPreview.innerHTML = marked.parse(markdownContent);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      syncMarkDownView();
+    });
+  </script>
+</body>
+
+</html>
